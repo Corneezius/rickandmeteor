@@ -10,7 +10,7 @@ const ImageDetail = (props) => {
         <h3 className="media-heading">
           {props.image.name}
         </h3>
-        <h4> {props.image.status} </h4>
+        <h4> status:{props.image.status}</h4>
       </div>
     </li>
   );
