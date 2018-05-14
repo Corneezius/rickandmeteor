@@ -3,16 +3,11 @@ import React from "react";
 import ImageDetail from "./image_detail";
 
 
-const IMAGES = [
-  {title: "One", link:"https://dummyimage.com/600x400/000/fff&text=Hello"},
-  {title: "Two", link:"https://dummyimage.com/600x400/000/fff&text=Hello"},
-  {title: "Three",link:"https://dummyimage.com/600x400/000/fff&text=Hello"},
-]
 
 // Create component
-const ImageList = () => {
- const RenderedImages = IMAGES.map(image =>
- <ImageDetail key={image.title} image={image}/>
+const ImageList = (props) => {
+ const RenderedImages = props.images.map(image =>
+ <ImageDetail key={image.name} image={image}/>
  );
 
   return (
