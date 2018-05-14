@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {images: [] };
   }
   componentWillMount(){
-    axios.get("https://rickandmortyapi.com/api/episode/")
+    axios.get("https://rickandmortyapi.com/api/character/")
       .then(response => this.setState({images: response.data.results}));
   }
   render() {
